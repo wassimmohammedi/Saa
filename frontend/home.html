@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Assurance & Protection</title>
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <section class="section">
-        <div>
-            hello world
+    
+    <!-- Section d'accueil -->
+    <section class="section1">
+        <h1>Bienvenue chez AssurSafe</h1>
+        <h2>Prévention, Accompagnement et Protection</h2>
+        <button class="welcome-btn" onclick="scrollTo('services')">Découvrir</button>
+    </section>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Nous offrons des solutions d'assurance adaptées à vos besoins.</p>
+        <ul>
+            <li><strong>Prévention</strong> : Analyse des risques et conseils pour éviter les sinistres.</li>
+            <li><strong>Accompagnement</strong> : Assistance personnalisée en cas de problème.</li>
+            <li><strong>Consultation</strong> : Accès à des experts en assurance pour mieux comprendre vos droits.</li>
+            <li><strong>Protection des Biens</strong> : Sécurisez vos biens avec nos offres sur-mesure.</li>
+        </ul>
+    </section>
+    
+    <!-- Section Experts -->
+    <section id="experts">
+        <h2>Nos Experts</h2>
+        <p>Nos experts sont disponibles pour répondre à toutes vos questions.</p>
+        <div class="expert">
+            <img src="expert.jpg" alt="Expert en assurance">
+            <h3>Jean Dupont</h3>
+            <p>Expert en assurance depuis 15 ans</p>
+            <p>Email : <a href="mailto:jean.dupont@assursafe.com">jean.dupont@assursafe.com</a></p>
         </div>
     </section>
-    <a href="https://wassimmohammedi.github.io/Saa/sen.pdf" target="_blank">
-        Open PDF
-    </a>
+    
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Besoin d’une assistance ? Écrivez-nous à <a href="mailto:contact@assursafe.com">contact@assursafe.com</a></p>
+    </section>
+    
+    
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
