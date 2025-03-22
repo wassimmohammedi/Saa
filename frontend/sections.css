@@ -1,15 +1,20 @@
-/* Réinitialisation */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
 body {
     background: #f4f4f4;
-    color: #333;
+    color: #ffffff;
     text-align: center;
+    background-color: #313131fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 section{
     width: 100%;
@@ -21,6 +26,8 @@ section{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('../frontend/images/Hotels\ Business\ Website.png') no-repeat center/cover;
     color: white;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,39 +60,6 @@ h2 {
     background: #001e53;
     transform: scale(1.1);
 }
-
-/* Navigation */
-nav {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    color: rgb(46, 46, 46);
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-li:hover {
-    color: #ffcc00;
-}
-
-/* Sections */
 section {
     padding: 50px;
 }
@@ -94,8 +68,6 @@ h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
-
-/* Section Experts */
 .expert {
     margin-top: 20px;
 }

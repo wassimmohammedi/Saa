@@ -1,76 +1,27 @@
 nav {
-    position: fixed; /* Keep this fixed */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    background: rgba(0, 140, 255, 0.671);
+    padding: 30px;
+    position: fixed; /* Changed to fixed */
+    border-radius: 0px 0px 20px 20px;
     top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease-in-out;
-    z-index: 1000; /* Ensure it stays above other content */
+    
 }
 
-
-
-/* Bouton Hamburger */
-#navbutt {
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    padding: 10px;
-    background-color: #6a11cb;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    list-style: none;
+    text-transform: capitalize;
 }
 
-/* Style pour Mobile */
-/* Style pour Mobile */
-@media (max-width: 700px) {
-    nav {
-        width: 100%;
-        background: linear-gradient(135deg, #6a11cb, #2575fc); /* Remettre un fond */
-        position: relative;
-    }
-
-    /* Afficher le bouton du menu */
-    #navbutt {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        padding: 10px;
-        background-color: #6a11cb;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 5px;
-        z-index: 100;
-    }
-
-    /* Masquer le menu par défaut */
-    ul {
-        flex-direction: column;
-        align-items: center;
-        background: rgba(17, 141, 203, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease-in-out;
-        padding: 0;
-    }
-
-    /* Afficher le menu quand il est actif */
-    ul.active {
-        max-height: 300px; /* Ajuster selon le nombre d'éléments */
-        padding: 15px 0;
-    }
+nav ul li {
+    text-decoration: none;
 }
-
