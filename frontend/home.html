@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="./styles/contacts.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>prevention</li>
+                <li>sensibisation</li>
+                <li>Accompagnement</li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-title">Bienvenue chez AssurSafe</h1>
@@ -33,6 +42,26 @@
         
         <div class="scroll-indicator">
             <span></span>
+        </div>
+    </section>
+    <section class="why-us">
+        <h2>Pourquoi choisir AssurSafe ?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🏆</div>
+                <h3>15 ans d'expérience</h3>
+                <p>Expertise reconnue dans le secteur</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⏱️</div>
+                <h3>Délais rapides</h3>
+                <p>Indemnisation sous 48h</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">📱</div>
+                <h3>Application mobile</h3>
+                <p>Gérez tout depuis votre smartphone</p>
+            </div>
         </div>
     </section>
     <section id="services">
@@ -148,8 +177,108 @@
             </div>
         </div>
     </section>
+    <section class="faq-section">
+        <h2>Questions fréquentes</h2>
+        <div class="faq-accordion">
+            <!-- Assurance Générale -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Comment déclarer un sinistre ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Vous pouvez déclarer un sinistre 24h/24 via notre application mobile, votre espace client en ligne ou en contactant notre service sinistres au 01 23 45 67 89. Pensez à prendre des photos des dégâts et à conserver tous les justificatifs.</p>
+                </div>
+            </div>
     
-    <!-- Section Contact -->
+            <!-- Thermographie -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Comment la thermographie infrarouge peut-elle protéger mon entreprise ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nos inspections thermographiques détectent les anomalies invisibles à l'œil nu : surchauffes électriques, défauts d'isolation, infiltrations d'eau. Cela permet de prévenir les incendies, les pannes coûteuses et réduit jusqu'à 30% votre prime d'assurance grâce à notre programme de prévention certifié.</p>
+                </div>
+            </div>
+    
+            <!-- Prévention -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Quels avantages ai-je à souscrire à votre programme de prévention ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nos clients bénéficient d'un audit de sécurité annuel gratuit, de réductions sur les inspections thermographiques, et jusqu'à 25% de réduction sur leur cotisation. De plus, nous offrons une garantie "Prévention Plus" qui couvre les frais de mise en conformité après détection de risques.</p>
+                </div>
+            </div>
+    
+            <!-- Technologie -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    À quelle fréquence faut-il réaliser une inspection thermographique ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nous recommandons :<br>
+                    - Annuellement pour les installations électriques<br>
+                    - Tous les 2 ans pour l'enveloppe du bâtiment<br>
+                    - Après tout incident ou rénovation majeure<br>
+                    Nos abonnés "Protection Totale" bénéficient de 2 inspections par an incluses dans leur contrat.</p>
+                </div>
+            </div>
+    
+            <!-- Couverture -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    La thermographie est-elle obligatoire pour être assuré ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Pour les entreprises de plus de 50 salariés ou avec des installations électriques sensibles, c'est une exigence de notre police "Professionnel Plus". Pour les autres, c'est optionnel mais fortement conseillé - cela peut réduire votre franchise de 15% et donner accès à des garanties étendues.</p>
+                </div>
+            </div>
+    
+            <!-- Détection -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Quels types de problèmes la thermographie peut-elle détecter ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nos caméras haute résolution identifient :<br>
+                    • Points chauds dans les installations électriques<br>
+                    • Défauts d'isolation thermique<br>
+                    • Infiltrations d'eau et ponts thermiques<br>
+                    • Défauts dans les systèmes mécaniques<br>
+                    • Zones à risque d'incendie latent<br>
+                    Un rapport détaillé avec analyse de risque est fourni après chaque inspection.</p>
+                </div>
+            </div>
+    
+            <!-- Tarifs -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Quel est le coût d'une inspection thermographique ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Nos tarifs démarrent à 490€ HT pour une inspection standard (jusqu'à 100m²). Pour nos clients assurés, des forfaits préférentiels sont disponibles à partir de 29€/mois (incluant 2 inspections annuelles et un monitoring continu des installations sensibles). Demandez un devis personnalisé selon vos besoins.</p>
+                </div>
+            </div>
+    
+            <!-- Certification -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Vos inspecteurs sont-ils certifiés ?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolument. Tous nos techniciens sont certifiés Niveau II ou III selon la norme ISO 18436 et habilités par le COFRAC. Nous utilisons du matériel de classe 3 (précision ±1°C) avec calibration annuelle. Chaque rapport est validé par notre ingénieur risques certifié Apave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <div class="contact-header">
