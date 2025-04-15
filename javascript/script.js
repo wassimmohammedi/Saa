@@ -7,8 +7,13 @@ function scrollToElement(selector) {
         console.error(`Element with selector "${selector}" not found.`);
     }
 }
+
+
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         question.classList.toggle('active');
     });
 });
+
+
+
