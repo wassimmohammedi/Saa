@@ -36,11 +36,16 @@
   transition: all 0.3s ease;
 }
 
+
 .navbar-logo:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-
+@media (max-width: 768px) {
+  .navbar-logo{
+    height: 50px;
+  }
+}
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -193,4 +198,25 @@
     padding: 0.8rem 2rem !important;
     font-size: 1.1rem !important;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px;
+  color: #666;
+  font-size: 0.9em;
+  background-color: #e9ecef;
+  border-radius: 10px 10px 0 0;
 }
