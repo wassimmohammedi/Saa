@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accompagnement Sectoriel - Solutions Spécialisées</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+     
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-top: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .single-sector {
+            grid-column: 1 / -1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .sector-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .sector-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+            border-color: #0056b3;
+        }
+        
+        .sector-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid;
+        }
+        
+        /* Couleurs spécifiques par secteur */
+        
+        
+        .sector-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sector-title {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        
+        .transport .sector-title { color: #007add; }
+        .industrie .sector-title { color: #007add; }
+        .climatique .sector-title { color: #007add; }
+        .energie .sector-title { color: #007add; }
+        .agriculture .sector-title { color: #007add; }
+        
+        .sector-description {
+            margin-bottom: 20px;
+            color: #555;
+            flex-grow: 1;
+        }
+        
+        .sector-list {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .sector-list li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .transport .sector-list li:before { color: #007add; }
+        .industrie .sector-list li:before { color: #007add; }
+        .climatique .sector-list li:before { color: #007add; }
+        .energie .sector-list li:before { color: #007add; }
+        .agriculture .sector-list li:before { color: #007add; }
+        
+        .sector-list li:before {
+            content: "•";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .btn-sector {
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: auto;
+        }
+        
+        .transport .btn-sector { background-color: #007add; }
+        .industrie .btn-sector { background-color: #007add; }
+        .climatique .btn-sector { background-color: #007add; }
+        .energie .btn-sector { background-color: #007add; }
+        .agriculture .btn-sector { background-color: #007add; }
+        
+        .btn-sector:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+            background-color: #e9ecef;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        @media (max-width: 768px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header {
+                padding: 25px 0;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .page-subtitle {
+                font-size: 1.1em;
+                padding: 0 15px;
+            }
+            
+            .sector-image {
+                height: 180px;
+            }
+        }
+    .page-header {
+        background: rgb(220, 220, 220);
+   
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.page-subtitle {
+    font-size: 1.4em;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 15px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+        letter-spacing: -0.3px;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1em;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img class="navbar-logo " src="../../public/saa-logo.png" alt="Logo-saa">
+                
+                <ul class="navbar-menu">
+                    <li><a href="../home.html">Accueil</a></li>
+                    <li><a href="./prevention.html">Prévention</a></li>
+                    <li><a href="./sensibilisation.html">Sensibilisation</a></li>
+                    <li><a>Accompagnement</a></li>
+                    <li><a href="../home.html#contact">Contact</a></li>
+
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </div>
+        </nav>
+    </header>
+    <div class="page-header">
+        <h1>Accompagnement Sectoriel : Des Solutions sur Mesure pour Votre Activité</h1>
+        <p class="page-subtitle">Découvrez nos solutions spécialisées pour protéger et développer votre activité</p>
+    </div>
+    <div class="container">
+        <!-- Première ligne : 2x2 -->
+        <div class="sectors-grid">
+            <!-- Transport -->
+            <div class="sector-card transport">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Secteur Transport" class="sector-image">
+                <div class="sector-content">
+                    <h2 class="sector-title">Transport & Logistique</h2>
+                    <p class="sector-description">Solutions complètes pour la gestion des risques dans le transport de marchandises et de personnes, avec une approche adaptée à chaque mode de transport.</p>
+                    <ul class="sector-list">
+                        <li>Analyse des risques routiers, maritimes et aériens</li>
+                        <li>Optimisation des coûts d'assurance flotte</li>
+                        <li>Gestion des risques liés aux marchandises dangereuses</li>
+                    </ul>
+                    <a href="pdf/transport.pdf" class="btn-sector" target="_blank">Découvrir nos solutions Transport</a>
+                </div>
+            </div>
+            
+            <!-- Industrie -->
+            <div class="sector-card industrie">
+                <img src="https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Secteur Industrie" class="sector-image">
+                <div class="sector-content">
+                    <h2 class="sector-title">Industrie & Manufacture</h2>
+                    <p class="sector-description">Protection et accompagnement pour les sites industriels, avec une expertise en risques technologiques et responsabilité civile professionnelle.</p>
+                    <ul class="sector-list">
+                        <li>Prévention des risques industriels majeurs</li>
+                        <li>Couverture des équipements spécialisés</li>
+                        <li>Gestion des interruptions d'activité</li>
+                    </ul>
+                    <a href="pdf/industrie.pdf" class="btn-sector" target="_blank">Découvrir nos solutions Industrie</a>
+                </div>
+            </div>
+            
+            <!-- Risques Climatiques -->
+            <div class="sector-card climatique">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Risques Climatiques" class="sector-image">
+                <div class="sector-content">
+                    <h2 class="sector-title">Risques Climatiques</h2>
+                    <p class="sector-description">Anticipez et protégez vos activités des aléas climatiques avec nos solutions d'adaptation et de résilience.</p>
+                    <ul class="sector-list">
+                        <li>Évaluation de la vulnérabilité climatique</li>
+                        <li>Solutions pour événements extrêmes</li>
+                        <li>Stratégies d'adaptation à long terme</li>
+                    </ul>
+                    <a href="pdf/climat.pdf" class="btn-sector" target="_blank">Découvrir nos solutions Climat</a>
+                </div>
+            </div>
+            
+            <!-- Énergie -->
+            <div class="sector-card energie">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Secteur Énergie" class="sector-image">
+                <div class="sector-content">
+                    <h2 class="sector-title">Énergie & Utilities</h2>
+                    <p class="sector-description">Expertise sectorielle pour les producteurs, distributeurs et fournisseurs d'énergie, des solutions adaptées à chaque technologie.</p>
+                    <ul class="sector-list">
+                        <li>Couverture des risques spécifiques aux énergies</li>
+                        <li>Gestion des risques cyber pour les infrastructures</li>
+                        <li>Solutions pour la transition énergétique</li>
+                    </ul>
+                    <a href="pdf/energie.pdf" class="btn-sector" target="_blank">Découvrir nos solutions Énergie</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carte seule en bas -->
+        <div class="single-sector">
+            <div class="sector-card agriculture">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Agriculture Durable" class="sector-image">
+                <div class="sector-content">
+                    <h2 class="sector-title">Agriculture Durable</h2>
+                    <p class="sector-description">Solutions innovantes pour protéger les exploitations agricoles contre les aléas climatiques, sanitaires et économiques, tout en accompagnant la transition agroécologique.</p>
+                    <ul class="sector-list">
+                        <li>Assurance récolte multirisque climatique</li>
+                        <li>Protection contre les risques sanitaires</li>
+                        <li>Solutions pour l'agriculture de précision</li>
+                    </ul>
+                    <a href="pdf/agriculture.pdf" class="btn-sector" target="_blank">Découvrir nos solutions Agricoles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Solutions Sectorielles - Tous droits réservés</p>
+            <p>Contact : sectoriel@solutions.com - 0800 789 456</p>
+            <p>Nos experts sont à votre disposition pour une analyse personnalisée de vos besoins</p>
+        </div>
+    </footer>
+</body>
+</html>
