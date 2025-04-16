@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensibilisation aux risques - Assurances</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../global.css">
+
+
+
+    <style>
+      
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .page-header {
+            background-color: #0056b3;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .theme-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .theme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .theme-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid #0056b3;
+        }
+        
+        .theme-content {
+            padding: 25px;
+        }
+        
+        .theme-title {
+            color: #0056b3;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .theme-description {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .theme-list {
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .theme-list li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .theme-list li:before {
+            content: "•";
+            color: #0056b3;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .btn-pdf {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .btn-pdf:hover {
+            background-color: #003d7a;
+            transform: scale(1.02);
+        }
+        
+        .btn-pdf:active {
+            transform: scale(0.98);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .themes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-header {
+                padding: 20px 0;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <img class="navbar-logo " src="../../public/saa-logo.png" alt="Logo-saa">
+                
+                <ul class="navbar-menu">
+                    <li><a href="../home.html">Accueil</a></li>
+                    <li><a href="./prevention.html">Prévention</a></li>
+                    <li><a href="">Sensibilisation</a></li>
+                    <li><a href="/accompagnement">Accompagnement</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="themes-grid">
+            <!-- Thème 1 - Incendie -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/1.png" alt="Risque incendie" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Prévention des incendies : mieux vaut prévenir que reconstruire</h2>
+                    <p class="theme-description">Un incendie peut éclater sans prévenir, en quelques secondes. La chaleur, les fumées toxiques et les flammes détruisent tout sur leur passage. La prévention est la meilleure protection, combinée à une assurance habitation qui couvre les dégâts liés au feu.</p>
+                    <ul class="theme-list">
+                        <li>Faites vérifier vos installations électriques par un professionnel agréé</li>
+                        <li>Installez des détecteurs de fumée et testez-les régulièrement</li>
+                        <li>Utilisez des multiprises et équipements électriques de qualité</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+    
+            <!-- Thème 2 - Séismes -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/2.png" alt="Risque sismique" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Séismes : anticiper l’imprévisible pour mieux se protéger</h2>
+                    <p class="theme-description">Même si rares dans certaines zones, les séismes peuvent survenir sans avertissement et provoquer des dégâts considérables. Une bonne préparation et une assurance couvrant les catastrophes naturelles sont essentielles.</p>
+                    <ul class="theme-list">
+                        <li>Fixez solidement vos meubles et étagères</li>
+                        <li>Préparez un kit d’urgence avec eau, lampe, radio, papiers</li>
+                        <li>Vérifiez les clauses "catastrophes naturelles" dans votre contrat</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+    
+            <!-- Thème 3 - Inondations -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/3.png" alt="Risque inondation" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Inondations : se préparer à faire face aux montées des eaux</h2>
+                    <p class="theme-description">De plus en plus fréquentes, les inondations peuvent affecter tous types de logements. Adapter son habitat et sa couverture d’assurance peut limiter considérablement les dommages.</p>
+                    <ul class="theme-list">
+                        <li>Surélevez les appareils électroménagers et les prises</li>
+                        <li>Gardez les objets de valeur dans des lieux étanches ou en hauteur</li>
+                        <li>Renseignez-vous sur les zones à risque de votre commune</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+    
+            <!-- Thème 4 - Vol et vandalisme -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/4.png" alt="Risque vol et vandalisme" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Vol et vandalisme : sécuriser pour dissuader</h2>
+                    <p class="theme-description">Les intrusions et actes malveillants peuvent causer de lourdes pertes. En renforçant la sécurité de votre logement et en souscrivant une assurance multirisque, vous vous protégez efficacement contre ces menaces.</p>
+                    <ul class="theme-list">
+                        <li>Installez un système d’alarme ou de vidéosurveillance connecté</li>
+                        <li>Utilisez des serrures multipoints et des volets résistants</li>
+                        <li>Gardez une trace des objets de valeur pour les déclarations d’assurance</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+    
+            <!-- Thème 5 - Accidents domestiques -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/5.png" alt="Risque accidents domestiques" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Accidents domestiques : la vigilance au quotidien</h2>
+                    <p class="theme-description">Les chutes, brûlures, intoxications ou électrocutions représentent une part importante des sinistres domestiques. Une bonne organisation du domicile et une couverture adaptée peuvent faire toute la différence.</p>
+                    <ul class="theme-list">
+                        <li>Sécurisez les zones à risques : escaliers, cuisine, salle de bain</li>
+                        <li>Rangez les produits toxiques et les outils tranchants hors de portée</li>
+                        <li>Vérifiez les garanties "responsabilité civile" de votre contrat</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+    
+            <!-- Thème 6 - Pannes électriques et surtensions -->
+            <div class="theme-card">
+                <img src="../../public/sensibilisation/6.png" alt="Risque pannes électriques" class="theme-image">
+                <div class="theme-content">
+                    <h2 class="theme-title">Pannes électriques & surtensions : un risque souvent négligé</h2>
+                    <p class="theme-description">Les surtensions peuvent endommager vos équipements électroniques et provoquer des débuts d'incendie. L’installation de protections adaptées et une assurance couvrant les dommages électriques sont essentielles dans tout logement moderne.</p>
+                    <ul class="theme-list">
+                        <li>Utilisez des disjoncteurs différentiels et des parafoudres</li>
+                        <li>Faites inspecter votre tableau électrique par un professionnel</li>
+                        <li>Stockez vos appareils sensibles sur onduleur ou multiprises avec protection</li>
+                    </ul>
+                    <a href="../../pdf/Sensibilisqtion.pdf" class="btn-pdf" target="_blank" rel="noopener noreferrer">Ouvrir le guide complet (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
